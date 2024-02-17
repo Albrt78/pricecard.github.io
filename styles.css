@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+    --card-block: hsl(179, 62%, 43%);
+    --button-text-color: hsl(71, 73%, 54%);
+    --description: hsl(204, 43%, 93%);
+    --textcolor: hsl(218, 22%, 67%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--description);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    font-family: "Karla", sans-serif;
+}
+
+.container {
+    display: grid;
+    background-color: #fff;
+    width: 725px;
+    height: 530px;
+    border-radius: 10px;
+    box-shadow: 0 0 70px 0 var(--textcolor);
+}
+
+.container .info {
+    padding-top: 48px;
+    padding-inline: 48px;
+}
+
+.container .info h1 {
+    font-size: 1.67rem;
+    color: #2a9897;
+}
+
+.container .info .sub-header {
+    margin-top: 26px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--button-text-color);
+}
+
+.container .info .description {
+    margin-top: 15px;
+    margin-bottom: 2.8rem;
+    font-size: 1.11rem;
+    color: var(--textcolor);
+    line-height: 1.6;
+}
+
+.container .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .wrapper .price-info {
+    background-color: #2a9897;
+    border-bottom-left-radius: 10px;
+    padding-inline: 48px;
+    padding-top: 30px;
+}
+
+.container .wrapper .price-info h2 {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-top: 1.1rem;
+}
+
+.container .wrapper .price-info .price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.container .wrapper .price-info .price .num-price {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.container .wrapper .price-info .price h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--textcolor);
+}
+
+.container .wrapper .price-info .price-description {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--description);
+}
+
+.container .wrapper .price-info button {
+    margin-top: 2.3rem;
+    margin-bottom: 2.8rem;
+    padding-block: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--description);
+    background-color: var(--button-text-color);
+    width: 102%;
+    border-radius: 5px;
+}
+
+.container .wrapper .faq-info {
+    background-color: var(--card-block);
+    border-bottom-right-radius: 10px;
+    padding-inline: 48px;
+    padding-top: 40px;
+}
+
+.container .wrapper .faq-info h5 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+.container .wrapper .faq-info .FAQ {
+    margin-top: 24px;
+    line-height: 1.125rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--description);
+}
+
+.container .wrapper .faq-info .FAQ h6 {
+    margin-bottom: 0.3rem;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+    .container {
+        margin-inline: 20px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .container .info {
+        padding-inline: 30px;
+    }
+
+    .container .info h1 {
+        font-size: 1.3rem;
+    }
+
+    .container .info .sub-header {
+        font-size: 1rem;
+    }
+
+    .container .info .description {
+        font-size: 0.8rem;
+    }
+
+    .container .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .container .wrapper .price-info {
+        padding-inline: 30px;
+        padding-top: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .container .wrapper .price-info .price-description {
+        font-size: 1rem;
+    }
+
+    .container .wrapper .price-info button {
+        padding-block: 0.8rem;
+        width: 100%;
+    }
+
+    .container .wrapper .faq-info {
+        padding-inline: 30px;
+        padding-top: 10px;
+        padding-bottom: 1rem;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .container .wrapper .price-info button {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 576.98px) {
+    .container .info {
+        padding-top: 20px;
+    }
+
+    .container .info .description {
+        margin-bottom: 1rem;
+    }
+
+    .container .wrapper .price-info .price .num-price {
+        font-size: 2rem;
+    }
+
+    .container .wrapper .price-info .price {
+        margin-bottom: 3px;
+    }
+
+    .container .wrapper .price-info button {
+        margin-top: 1.5rem;
+    }
+
+    .container .wrapper .faq-info .FAQ {
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 375.98px) {
+    .container .info h1 {
+        font-size: 1.1rem;
+    }
+
+    .container .info .description {
+        font-size: 0.9rem;
+    }
+
+    .container .info .sub-header {
+        margin-top: 15px;
+        font-size: 0.8rem;
+    }
+
+    .container .wrapper .price-info h2 {
+        font-size: 1.1rem;
+    }
+
+    .container .wrapper .price-info .price {
+        margin-top: 10px;
+    }
+
+    .container .wrapper .price-info .price .num-price {
+        font-size: 1.6rem;
+    }
+
+    .container .wrapper .price-info .price h4 {
+        font-size: 0.8rem;
+    }
+
+    .container .wrapper .price-info .price-description {
+        font-size: 0.8rem;
+    }
+
+    .container .wrapper .price-info button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320.98px) {
+    .container .wrapper .faq-info h5 {
+        font-size: 1.1rem;
+    }
+
+    .container .wrapper .faq-info .FAQ {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    .container .wrapper .price-info button {
+        font-size: 0.8rem;
+        padding-block: 0.5rem;
+        margin-top: 1rem;
+    }
+}

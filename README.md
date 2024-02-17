@@ -17,9 +17,8 @@ This challenge is designed based on the provided template from Frontend Mentor w
 
 ### Links
 
--   Solution URL: [https://github.com/Albrt78/frontend_mentor_project/tree/main/Single%20Price%20Card%20With%20GRID]
--   Live Site URL: [https://chic-gecko-6d7372.netlify.app/]
-
+-   Solution URL: [Single Price Card](https://github.com/Albrt78/pricecard.github.io)
+-   Live Site URL: [Single Price Card](https://albrt78.github.io/pricecard.github.io/)
 ### Built with
 
 -   Semantic HTML5 markup

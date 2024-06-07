@@ -142,6 +142,24 @@ body {
 }
 
 /* Media Query */
+@media (max-width: 768.98px) {
+    .container {
+        width: 670px;
+    }
+
+    .container .info {
+        padding-inline: 40px;
+    }
+
+    .container .wrapper .price-info {
+        padding-inline: 40px;
+    }
+
+    .container .wrapper .faq-info {
+        padding-inline: 40px;
+    }
+}
+
 @media (max-width: 600px) {
     .container {
         margin-inline: 20px;
